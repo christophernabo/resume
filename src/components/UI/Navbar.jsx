@@ -31,16 +31,16 @@ function Navbar() {
     backgroundColor: "#ffffff",
     color: "#000000",
     border: "none",
-    borderRadius: "5px",
+    borderRadius: "10px",
     padding: "10px",
-    margin: "10px 50px 0px 30px",
+    margin: "10px 50px 10px 50px",
     fontFamily: "Consolas",
     fontSize: "16px",
     transition: "background-color 0.3s ease-in-out"
   };
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div style={{ borderBottom: "1px solid black" }}>
       {buttons.map((button) => (
         <button
           key={button.id}

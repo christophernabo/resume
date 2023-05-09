@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Picture from "../Assets/picture.png";
 import Navbar from "../UI/Navbar";
+import Footer from "../UI/Footer";
 
 const phrases = ["Christopher Nabo", "a Software Full Stack Developer and", "a Web Application Tester"];
 
@@ -66,19 +67,20 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div style={{ display: 'inline-block', justifyContent: 'center', alignItems: 'left', height: '100vh' }}>
+    <div style={{ display: 'inline-block', justifyContent: 'center', minHeight: "80vh", minWidth: "80vw", border: "1px solid black ", margin: "10px", borderRadius: "20px" }}>
       <Navbar />
-      <div style={{ marginTop: '100px' }}>
+      <div style={{ margin: '50px 0px 50px 0px' }}>
         <img src={Picture} alt="" style={{ maxWidth: '250px', height: 'auto' }} />
       </div>
       <div style={{ color: '#000000', textAlign: 'center', marginTop: '50px', fontSize: `${fontSize}px` }}>
         <div>Hi! I'm</div>
-        <div style={{ fontSize: `${fontSize + 10}px`, marginLeft: '50px' }}>
+        <div style={{ fontSize: `${fontSize + 10}px`, minHeight: "150px" }}>
           <b>{currentPhrase}</b>
           <span style={{ visibility: showCursor ? 'visible' : 'hidden' }}>_</span>
         </div>
       </div>
-    </div>
+      <Footer />
+    </div >
   );
 };
 
