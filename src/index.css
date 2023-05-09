@@ -9,8 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* 
-  background-image: url('resumeBackground.png');
+
+  /* background-image: url('../src/components/Assets/resumeBackground.png');
   background-size: 100% 50%;
   background-position: top;
   height: 100vh;

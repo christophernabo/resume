@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Picture from "../../picture.png";
+import Picture from "../Assets/picture.png";
 import Navbar from "../UI/Navbar";
 
 const phrases = ["Christopher Nabo", "a Software Full Stack Developer and", "a Web Application Tester"];
