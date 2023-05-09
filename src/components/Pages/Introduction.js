@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Picture from "../picture.png";
-import Navbar from "./Navbar";
+import Picture from "../../picture.png";
+import Navbar from "../UI/Navbar";
 
 const phrases = ["Christopher Nabo", "a Software Full Stack Developer and", "a Web Application Tester"];
 
@@ -9,7 +9,7 @@ const Introduction = () => {
   const [currentPhrase, setCurrentPhrase] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
-  const [deletingSpeed, setDeletingSpeed] = useState(50);
+  const [deletingSpeed] = useState(50);
   const [showCursor, setShowCursor] = useState(true);
   const [fontSize, setFontSize] = useState(45);
 
@@ -67,7 +67,7 @@ const Introduction = () => {
 
   return (
     <div style={{ display: 'inline-block', justifyContent: 'center', alignItems: 'left', height: '100vh' }}>
-      <div><Navbar /></div>
+      <Navbar />
       <div style={{ marginTop: '100px' }}>
         <img src={Picture} alt="" style={{ maxWidth: '250px', height: 'auto' }} />
       </div>
