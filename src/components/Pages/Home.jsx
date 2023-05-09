@@ -4,7 +4,7 @@ import Navbar from "../UI/Navbar";
 
 const phrases = ["Christopher Nabo", "a Software Full Stack Developer and", "a Web Application Tester"];
 
-const Introduction = () => {
+const HomePage = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentPhrase, setCurrentPhrase] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -82,4 +82,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default HomePage;

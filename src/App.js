@@ -1,11 +1,23 @@
 import './App.css';
-
-import Introduction from './components/Pages/Introduction.js';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "../src/components/Pages/Home";
+import ExperiencePage from "../src/components/Pages/Experience";
+import SkillsPage from "../src/components/Pages/Skills";
+import EducationPage from "../src/components/Pages/Education";
+import OtherPage from "../src/components/Pages/Other";
 
 function App() {
   return (
     <div className="App">
-      <Introduction />
+      <Router>
+        <Switch>
+          <Route path="/experience" component={ExperiencePage} />
+          <Route path="/skills" component={SkillsPage} />
+          <Route path="/education" component={EducationPage} />
+          <Route path="/other" component={OtherPage} />
+          <Route path="/" component={HomePage} />
+        </Switch>
+      </Router>
     </div>
   );
 }
