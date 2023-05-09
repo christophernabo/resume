@@ -1,29 +1,49 @@
-import React from 'react';
+import React, { useState } from "react";
 
-function Navbar() {
+function ButtonHover() {
+  const [buttons, setButtons] = useState([
+    { id: 1, isHovered: false, label: 'Experience' },
+    { id: 2, isHovered: false, label: 'Skills' },
+    { id: 3, isHovered: false, label: 'Education' },
+    { id: 4, isHovered: false, label: 'Other' },
+  ]);
+
+  const handleHover = (id, isHovered) => {
+    const updatedButtons = buttons.map((button) =>
+      button.id === id ? { ...button, isHovered } : button
+    );
+    setButtons(updatedButtons);
+  };
+
   const buttonStyle = {
-    margin: '30px',
-  }
-
-  const linkStyle = {
-    display: 'block',
-    padding: '10px',
+    backgroundColor: '#ffffff',
     color: '#000000',
-    textDecoration: 'underline',
-  }
+    border: 'none',
+    borderRadius: '5px',
+    padding: '10px',
+    margin: '10px 50px 0px 30px',
+    fontFamily: 'Consolas',
+    fontSize: '16px',
+    transition: 'background-color 0.3s ease-in-out',
+  };
 
   return (
-    <nav>
-      <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', justifyContent: 'center' }}>
-        <li style={buttonStyle} ><a href="#experience" style={linkStyle}>Experience</a></li>
-        <li style={buttonStyle} ><a href="#skills" style={linkStyle}>Skills</a></li>
-        <li style={buttonStyle} ><a href="#education" style={linkStyle}>Education</a></li>
-        <li style={buttonStyle} ><a href="#others" style={linkStyle}>Others</a></li>
-
-      </ul>
-    </nav>
+    <div style={{ marginTop: '30px' }}>
+      {buttons.map((button) => (
+        <button
+          key={button.id}
+          style={{
+            ...buttonStyle,
+            backgroundColor: button.isHovered ? "#8C8C8C" : buttonStyle.backgroundColor,
+          }}
+          onMouseEnter={() => handleHover(button.id, true)}
+          onMouseLeave={() => handleHover(button.id, false)}
+        >
+          {button.label}
+        </button>
+      ))}
+    </div>
   );
 }
 
-export default Navbar;
-
+export default ButtonHover;
