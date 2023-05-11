@@ -4,7 +4,7 @@ import HomePage from "../src/components/Pages/Home";
 import ExperiencePage from "../src/components/Pages/Experience";
 import SkillsPage from "../src/components/Pages/Skills";
 import EducationPage from "../src/components/Pages/Education";
-import OtherPage from "../src/components/Pages/Other";
+import DownloadsPage from "../src/components/Pages/Downloads";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Route path="/experience" component={ExperiencePage} />
           <Route path="/skills" component={SkillsPage} />
           <Route path="/education" component={EducationPage} />
-          <Route path="/other" component={OtherPage} />
+          <Route path="/downloads" component={DownloadsPage} />
           <Route path="/" component={HomePage} />
         </Switch>
       </Router>
