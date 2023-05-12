@@ -19,6 +19,12 @@ function DownloadsPage() {
                 textAlign: "left"
             }}>
 
+                <h3 style={{
+                    marginTop: "20px",
+                    marginBottom: "5px",
+                    textDecoration: "underline"
+                }}>PDF Resume</h3>
+
                 <div style={{
                     display: "flex",
                     alignItems: "center",
@@ -41,8 +47,7 @@ function DownloadsPage() {
                         }} >View
                         </span>
                     </a> | <a href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         style={{ textDecoration: "none" }}
                         aria-label="Download File">
                             <span style={{
@@ -52,6 +57,12 @@ function DownloadsPage() {
                         </a>
                     </div>
                 </div>
+
+                <h3 style={{
+                    marginTop: "20px",
+                    marginBottom: "5px",
+                    textDecoration: "underline"
+                }}>Academic Qualifications</h3>
 
                 <div style={{
                     display: "flex",
@@ -74,9 +85,8 @@ function DownloadsPage() {
                             color: "inherit"
                         }} >View
                         </span>
-                    </a> | <a href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    </a> | <a href="Files/Christopher Nabo Diploma.pdf"
+                        download
                         style={{ textDecoration: "none" }}
                         aria-label="Download File">
                             <span style={{
@@ -97,7 +107,36 @@ function DownloadsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>Civil Service</div>
+                    }}>Transcript of Records (Available upon request)</div>
+                    <div >
+                        <a onClick={() => window.location.href = 'mailto:christopher.nabo07@gmail.com?subject=Request%20for%20Transcript%20of%20Records'}
+                            style={{ textDecoration: "none" }}
+                            aria-label="Download File">
+                            <span style={{
+                                cursor: "pointer",
+                                color: "#0000FF"
+                            }} >Request</span>
+                        </a>
+                    </div>
+                </div>
+
+                <h3 style={{
+                    marginTop: "20px",
+                    marginBottom: "5px",
+                    textDecoration: "underline"
+                }}>Certifications</h3>
+
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between"
+                }}>
+                    <div style={{
+                        marginRight: "10px",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap"
+                    }}>Certificate of Eligibility - Career Service Professional Examination</div>
                     <div ><a href="#"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -108,9 +147,8 @@ function DownloadsPage() {
                             color: "inherit"
                         }} >View
                         </span>
-                    </a> | <a href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    </a> | <a href="Files/Christopher Nabo Certificate of Eligibility - Career Service Professional Examination.pdf"
+                        download
                         style={{ textDecoration: "none" }}
                         aria-label="Download File">
                             <span style={{
@@ -131,7 +169,7 @@ function DownloadsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>Ubiquiti Broadband Wireless Specialist</div>
+                    }}>Ubiquiti Networks Training Certification - Ubiquiti Broadband Wireless Specialist</div>
                     <div ><a href="#"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -142,9 +180,8 @@ function DownloadsPage() {
                             color: "inherit"
                         }} >View
                         </span>
-                    </a> | <a href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    </a> | <a href="Files/Christopher Nabo Ubiquiti Networks Training Certification - Ubiquiti Broadband Wireless Specialist.pdf"
+                        download
                         style={{ textDecoration: "none" }}
                         aria-label="Download File">
                             <span style={{
@@ -153,8 +190,22 @@ function DownloadsPage() {
                             }} >Download</span>
                         </a>
                     </div>
+                </div>
+
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between"
+                }}>
+                    <div style={{
+                        marginRight: "10px",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap"
+                    }}>Certificate in Principles of Graphic Design (Pending)</div>
                 </div>
             </div>
+
 
             <Footer />
 
