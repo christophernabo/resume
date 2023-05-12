@@ -42,7 +42,7 @@ function DownloadsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>Diploma</div>
+                    }}>Resume</div>
                     <div > <a
                         href="Files/Christopher Nabo Resume.pdf"
                         target="_blank"
