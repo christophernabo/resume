@@ -42,18 +42,22 @@ function DownloadsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>Resume</div>
-                    <div ><a href="#"
+                    }}>Diploma</div>
+                    <div > <a
+                        href="Files/Christopher Nabo Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none" }}
-                        aria-label="View File">
+                        aria-label="View File"
+                        onClick={handleViewDocument}
+                    >
                         <span style={{
                             cursor: "pointer",
                             color: "inherit"
-                        }} >View
+                        }}>
+                            View
                         </span>
-                    </a> | <a href="#"
+                    </a> | <a href="Files/Christopher Nabo Resume.pdf"
                         download
                         style={{ textDecoration: "none" }}
                         aria-label="Download File">
