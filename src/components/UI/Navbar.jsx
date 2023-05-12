@@ -22,15 +22,14 @@ function Navbar() {
       );
       setButtons(updatedButtons);
       setActiveButton(activeLink);
-    } else {
-      const updatedButtons = buttons.map((button) =>
-        button.label === "Home" ? { ...button, isHovered: true } : button
-      );
-      setButtons(updatedButtons);
-      localStorage.setItem("activeLink", "/");
-      setActiveButton("/");
     }
   }, [localStorage]);
+
+  useEffect(() => {
+    return () => {
+      localStorage.removeItem("activeLink");
+    };
+  }, []);
 
   const handleHover = (id, isHovered) => {
     const updatedButtons = buttons.map((button) =>
@@ -68,6 +67,7 @@ function Navbar() {
 
   return (
     <div style={{ borderBottom: "1px solid black", backgroundColor: "#ADD8E6", borderRadius: "20px 20px 0px 0px", }}>
+
       {buttons.map((button) => (
         <button
           key={button.id}
@@ -83,6 +83,7 @@ function Navbar() {
           {button.label}
         </button>
       ))}
+
     </div>
   );
 }

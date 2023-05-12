@@ -15,14 +15,44 @@ const ExperiencePage = () => {
     }
 
     return (
-        <div style={{ display: 'inline-block', width: "80vw", border: "1px solid black ", margin: "10px", borderRadius: "20px" }}>
+        <div style={{
+            display: 'inline-block',
+            width: "80vw",
+            border: "1px solid black ",
+            margin: "10px",
+            borderRadius: "20px"
+        }}>
+
             <Navbar />
-            <div style={{ margin: "10px", textAlign: "left" }}>
-                <h3 style={{ marginTop: "20px", marginBottom: "5px", textDecoration: "underline" }}>Web Application Tester/Software Full Stack Developer</h3>
-                <h4 style={{ marginTop: "0", marginBottom: "5px" }}>Department of Science and Technology - Advanced Science and Institute (DOST-ASTI)</h4>
-                <h4 style={{ marginTop: "0", marginBottom: "5px" }}>March 2022 to April 2023</h4>
-                <h4 style={{ marginTop: "0", marginBottom: "5px" }}>Quezon City, National Capital Region, Philippines</h4>
+
+            <div style={{
+                margin: "10px",
+                textAlign: "left"
+            }}>
+
+                <h3 style={{
+                    marginTop: "20px",
+                    marginBottom: "5px",
+                    textDecoration: "underline"
+                }}>Web Application Tester/Software Full Stack Developer</h3>
+
+                <h4 style={{
+                    marginTop: "0",
+                    marginBottom: "5px"
+                }}>Department of Science and Technology - Advanced Science and Institute (DOST-ASTI)</h4>
+
+                <h4 style={{
+                    marginTop: "0",
+                    marginBottom: "5px"
+                }}>March 2022 to April 2023</h4>
+
+                <h4 style={{
+                    marginTop: "0",
+                    marginBottom: "5px"
+                }}>Quezon City, National Capital Region, Philippines</h4>
+
                 <p>Responsibilities as a Web Application Tester:</p>
+
                 <ul>
                     {showFullList ? (
                         <>
@@ -35,7 +65,11 @@ const ExperiencePage = () => {
                             <li>Work directly with the programming and design teams to investigate and reproduce complex issues; and</li>
                             <li>Identify, report and document software defects using provided templates.</li>
                             <li style={{ listStyleType: "none" }}>
-                                <a style={{ color: "blue", cursor: "pointer" }} onClick={toggleList}><span style={{ fontSize: "18px" }}>&laquo;</span> See less </a>
+                                <a style={{
+                                    color: "blue",
+                                    cursor: "pointer"
+                                }}
+                                    onClick={toggleList}><span style={{ fontSize: "18px" }}>&laquo;</span> See less </a>
                             </li>
                         </>
                     ) : (
@@ -44,12 +78,18 @@ const ExperiencePage = () => {
                             <li>Inform the test lead about what all resources will be required for software testing;</li>
                             <li>Develop and document test cases for testing and learn to prioritize testing activitie;</li>
                             <li style={{ listStyleType: "none" }}>
-                                <a style={{ color: "blue", cursor: "pointer" }} onClick={toggleList}>See more <span style={{ fontSize: "18px" }}>&raquo;</span></a>
+                                <a style={{
+                                    color: "blue",
+                                    cursor: "pointer"
+                                }}
+                                    onClick={toggleList}>See more <span style={{ fontSize: "18px" }}>&raquo;</span></a>
                             </li>
                         </>
                     )}
                 </ul>
+
                 <p>Responsibilities as a Software Full Stack Developer:</p>
+
                 <ul>
                     {showFullList1 ? (
                         <>
@@ -73,7 +113,11 @@ const ExperiencePage = () => {
                             <li>Produce system's manuals and technical documentation;</li>
                             <li>Ensure system features behave according to specifications by conducting unit test, integration test and regression test; and</li>
                             <li style={{ listStyleType: "none" }}>
-                                <a style={{ color: "blue", cursor: "pointer" }} onClick={toggleList1}><span style={{ fontSize: "18px" }}>&laquo;</span> See less </a>
+                                <a style={{
+                                    color: "blue",
+                                    cursor: "pointer"
+                                }}
+                                    onClick={toggleList1}><span style={{ fontSize: "18px" }}>&laquo;</span> See less </a>
                             </li>
                         </>
                     ) : (
@@ -82,32 +126,66 @@ const ExperiencePage = () => {
                             <li>Install and configure Anaconda Python package manager for Python back-end development;</li>
                             <li>Implement Django-based Web application back-end functionalities that will integrate with developed front-end solutions;</li>
                             <li style={{ listStyleType: "none" }}>
-                                <a style={{ color: "blue", cursor: "pointer" }} onClick={toggleList1}>See more <span style={{ fontSize: "18px" }}>&raquo;</span></a>
+                                <a style={{
+                                    color: "blue",
+                                    cursor: "pointer"
+                                }}
+                                    onClick={toggleList1}>See more <span style={{ fontSize: "18px" }}>&raquo;</span></a>
                             </li>
                         </>
                     )}
                 </ul>
+
                 <p>Shared Responsibilities:</p>
+
                 <ul>
                     <li>Write documentation of the software, e.g. test plan, testcases, bug reports, user manual, technical documentation;</li>
                     <li>Participate in events and other activities (e.g., exhibits, meetings, and seminars) needed for the project;</li>
                     <li>Handle minor task tickets that may be specific to software programmer, software tester, or business analyst; and</li>
                     <li>Proactively collaborate with other team members in delivering software requirements.</li>
                 </ul>
-                <h3 style={{ marginTop: "50px", marginBottom: "5px", textDecoration: "underline" }}>IT Personnel (On-the-job Training)</h3>
-                <h4 style={{ marginTop: "0", marginBottom: "5px" }}>Bicol University Polangui Campus - Engineering Department</h4>
-                <h4 style={{ marginTop: "0", marginBottom: "5px" }}>June 2019 to September 2019</h4>
-                <h4 style={{ marginTop: "0", marginBottom: "5px" }}>Polangui, Albay, Philippines</h4>
+
+                <h3 style={{
+                    marginTop: "50px",
+                    marginBottom: "5px",
+                    textDecoration: "underline"
+                }}>IT Personnel (On-the-job Training)</h3>
+
+                <h4 style={{
+                    marginTop: "0",
+                    marginBottom: "5px"
+                }}>Bicol University Polangui Campus - Engineering Department</h4>
+
+                <h4 style={{
+                    marginTop: "0",
+                    marginBottom: "5px"
+                }}>June 2019 to September 2019</h4>
+
+                <h4 style={{
+                    marginTop: "0",
+                    marginBottom: "5px"
+                }}>Polangui, Albay, Philippines</h4>
+
                 <p>Responsibilities:</p>
+
                 <ul>
                     <li>Maintain the running condition of computer units in the department's laboratory;</li>
                     <li>Perform software installation, computer reformatting, computer assembly and disassembly;</li>
                     <li>Keep an inventory of the computers and their peripheral devices; and</li>
                     <li>Create local area network among the computers and switches.</li>
                 </ul>
+
             </div>
-            <h4 style={{ marginLeft: "10px", marginTop: "50px", textAlign: "left", marginBottom: "20px" }}>NOTE: Character references are available upon request.</h4>
+
+            <h4 style={{
+                marginLeft: "10px",
+                marginTop: "50px",
+                textAlign: "left",
+                marginBottom: "20px"
+            }}>NOTE: Character references are available upon request.</h4>
+
             <Footer />
+
         </div>
     );
 };

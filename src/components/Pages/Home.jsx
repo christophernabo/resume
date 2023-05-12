@@ -67,19 +67,45 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div style={{ display: 'inline-block', minHeight: "80vh", width: "80vw", border: "1px solid black ", margin: "10px", borderRadius: "20px" }}>
+    <div style={{
+      display: 'inline-block',
+      minHeight: "80vh",
+      width: "80vw",
+      border: "1px solid black ",
+      margin: "10px",
+      borderRadius: "20px"
+    }}>
+
       <Navbar />
+
       <div style={{ margin: '50px 0px 50px 0px' }}>
-        <img src={Picture} alt="" style={{ maxWidth: '250px', height: 'auto' }} />
+        <img src={Picture} alt=""
+          style={{
+            maxWidth: '250px',
+            height: 'auto'
+          }} />
       </div>
-      <div style={{ color: '#000000', textAlign: 'center', marginTop: '50px', fontSize: `${fontSize}px` }}>
+
+      <div style={{
+        color: '#000000',
+        textAlign: 'center',
+        marginTop: '50px',
+        fontSize: `${fontSize}px`
+      }}>
+
         <div>Hi! I'm</div>
-        <div style={{ fontSize: `${fontSize + 10}px`, minHeight: "150px" }}>
+
+        <div style={{
+          fontSize: `${fontSize + 10}px`,
+          minHeight: "150px"
+        }}>
           <b>{currentPhrase}</b>
           <span style={{ visibility: showCursor ? 'visible' : 'hidden' }}>_</span>
         </div>
       </div>
+
       <Footer />
+
     </div >
   );
 };
