@@ -109,9 +109,8 @@ const ExperiencePage = () => {
                             <li>Perform hands-on programming tasks, such as prototyping, feature development, bug fixing, testing across multiple browsers/platforms;</li>
                             <li>Implement best practices for coding in accordance to W3C standards, great usability and exceptional quality, with awareness of client needs and priorities;</li>
                             <li>Design and implement web applications;</li>
-                            <li>Translate exchange specifications and build systems' prototype;</li>
-                            <li>Produce system's manuals and technical documentation;</li>
-                            <li>Ensure system features behave according to specifications by conducting unit test, integration test and regression test; and</li>
+                            <li>Translate exchange specifications and build systems' prototype; and</li>
+                            <li>Ensure system features behave according to specifications by conducting unit test, integration test and regression test.</li>
                             <li style={{ listStyleType: "none" }}>
                                 <a style={{
                                     color: "blue",

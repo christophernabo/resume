@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../UI/Navbar";
 import Footer from "../UI/Footer";
+import ReactDocViewer from '@cyntler/react-doc-viewer';
 
 function DownloadsPage() {
+    const [showViewer, setShowViewer] = useState(false);
+
+    const handleViewDocument = () => {
+        setShowViewer(true);
+    };
+
     return (
         <div style={{
             display: 'inline-block',
@@ -75,15 +82,19 @@ function DownloadsPage() {
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
                     }}>Diploma</div>
-                    <div ><a href="#"
+                    <div > <a
+                        href="Files/Christopher Nabo Diploma.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none" }}
-                        aria-label="View File">
+                        aria-label="View File"
+                        onClick={handleViewDocument}
+                    >
                         <span style={{
                             cursor: "pointer",
                             color: "inherit"
-                        }} >View
+                        }}>
+                            View
                         </span>
                     </a> | <a href="Files/Christopher Nabo Diploma.pdf"
                         download
@@ -137,15 +148,19 @@ function DownloadsPage() {
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
                     }}>Certificate of Eligibility - Career Service Professional Examination</div>
-                    <div ><a href="#"
+                    <div ><a
+                        href="Files/Christopher Nabo Certificate of Eligibility - Career Service Professional Examination.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none" }}
-                        aria-label="View File">
+                        aria-label="View File"
+                        onClick={handleViewDocument}
+                    >
                         <span style={{
                             cursor: "pointer",
                             color: "inherit"
-                        }} >View
+                        }}>
+                            View
                         </span>
                     </a> | <a href="Files/Christopher Nabo Certificate of Eligibility - Career Service Professional Examination.pdf"
                         download
@@ -170,15 +185,19 @@ function DownloadsPage() {
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
                     }}>Ubiquiti Networks Training Certification - Ubiquiti Broadband Wireless Specialist</div>
-                    <div ><a href="#"
+                    <div ><a
+                        href="Files/Christopher Nabo Ubiquiti Networks Training Certification - Ubiquiti Broadband Wireless Specialist.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none" }}
-                        aria-label="View File">
+                        aria-label="View File"
+                        onClick={handleViewDocument}
+                    >
                         <span style={{
                             cursor: "pointer",
                             color: "inherit"
-                        }} >View
+                        }}>
+                            View
                         </span>
                     </a> | <a href="Files/Christopher Nabo Ubiquiti Networks Training Certification - Ubiquiti Broadband Wireless Specialist.pdf"
                         download
