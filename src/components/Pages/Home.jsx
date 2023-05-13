@@ -69,7 +69,6 @@ const HomePage = () => {
   return (
     <div style={{
       display: 'inline-block',
-      minHeight: "80vh",
       width: "80vw",
       border: "1px solid black ",
       margin: "10px",
