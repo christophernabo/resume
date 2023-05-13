@@ -3,7 +3,7 @@ import Picture from "../Assets/picture.png";
 import Navbar from "../UI/Navbar";
 import Footer from "../UI/Footer";
 
-const phrases = ["Christopher Nabo", "a Software Full Stack Developer and", "a Web Application Tester"];
+const phrases = ["Christopher Nabo", "a Software QA Tester", "a Software Full Stack Developer"];
 
 const HomePage = () => {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);

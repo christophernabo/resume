@@ -34,7 +34,7 @@ const ExperiencePage = () => {
                     marginTop: "20px",
                     marginBottom: "5px",
                     textDecoration: "underline"
-                }}>Web Application Tester/Software Full Stack Developer</h3>
+                }}>Software QA Tester / Software Full Stack Developer</h3>
 
                 <h4 style={{
                     marginTop: "0",
@@ -51,7 +51,7 @@ const ExperiencePage = () => {
                     marginBottom: "5px"
                 }}>Quezon City, National Capital Region, Philippines</h4>
 
-                <p>Responsibilities as a Web Application Tester:</p>
+                <p>Responsibilities as a Software QA Tester:</p>
 
                 <ul>
                     {showFullList ? (
