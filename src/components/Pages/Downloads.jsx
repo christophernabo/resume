@@ -225,8 +225,33 @@ function DownloadsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>Certificate in Principles of Graphic Design (Pending)</div>
+                    }}>Certificate for Principles of Graphic Design</div>
+                    <div ><a
+                        href="Files/Christopher Nabo Certificate for Principles of Graphic Design.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
+                        aria-label="View File"
+                        onClick={handleViewDocument}
+                    >
+                        <span style={{
+                            cursor: "pointer",
+                            color: "inherit"
+                        }}>
+                            View
+                        </span>
+                    </a> | <a href="Files/Certificate for Principles of Graphic Design.pdf"
+                        download
+                        style={{ textDecoration: "none" }}
+                        aria-label="Download File">
+                            <span style={{
+                                cursor: "pointer",
+                                color: "inherit"
+                            }} >Download</span>
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
 
