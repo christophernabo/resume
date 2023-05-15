@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../UI/Navbar";
 import Footer from "../UI/Footer";
-import ReactDocViewer from '@cyntler/react-doc-viewer';
 
 function DownloadsPage() {
     const [showViewer, setShowViewer] = useState(false);
@@ -225,9 +224,9 @@ function DownloadsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>Certificate for Principles of Graphic Design</div>
-                    <div ><a
-                        href="Files/Christopher Nabo Certificate for Principles of Graphic Design.pdf"
+                    }}>Certificate of Accomplishment for Principles of Graphic Design</div>
+                    <div > <a
+                        href="Files/Christopher Nabo Certificate of Accomplishment for Principles of Graphic Design.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none" }}
@@ -240,7 +239,7 @@ function DownloadsPage() {
                         }}>
                             View
                         </span>
-                    </a> | <a href="Files/Certificate for Principles of Graphic Design.pdf"
+                    </a> | <a href="Files/Christopher Nabo Certificate of Accomplishment for Principles of Graphic Design.pdf"
                         download
                         style={{ textDecoration: "none" }}
                         aria-label="Download File">
@@ -251,9 +250,7 @@ function DownloadsPage() {
                         </a>
                     </div>
                 </div>
-
             </div>
-
 
             <Footer />
 
