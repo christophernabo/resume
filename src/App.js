@@ -5,6 +5,7 @@ import ExperiencePage from "../src/components/Pages/Experience";
 import SkillsPage from "../src/components/Pages/Skills";
 import EducationPage from "../src/components/Pages/Education";
 import DownloadsPage from "../src/components/Pages/Downloads";
+import ProjectsPage from './components/Pages/Projects';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/experience" component={ExperiencePage} />
           <Route path="/skills" component={SkillsPage} />
           <Route path="/education" component={EducationPage} />
+          <Route path="/projects" component={ProjectsPage} />
           <Route path="/downloads" component={DownloadsPage} />
           <Route path="/" component={HomePage} />
         </Switch>

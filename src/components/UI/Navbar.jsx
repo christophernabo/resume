@@ -7,7 +7,8 @@ function Navbar() {
     { id: 1, label: "Experience", link: "/experience" },
     { id: 2, label: "Skills", link: "/skills" },
     { id: 3, label: "Education", link: "/education" },
-    { id: 4, label: "Downloads", link: "/downloads" }
+    { id: 4, label: "Projects", link: "/projects" },
+    { id: 5, label: "Downloads", link: "/downloads" }
   ]);
 
   const [activeButton, setActiveButton] = useState(null);
