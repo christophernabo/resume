@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import News from "../Assets/news.png";
+import Weather from "../Assets/weather.png";
 import Navbar from "../UI/Navbar";
 import Footer from "../UI/Footer";
 
 function ProjectsPage() {
-    const [showViewer, setShowViewer] = useState(false);
+    const [, setShowViewer] = useState(false);
 
     const handleViewDocument = () => {
         setShowViewer(true);
@@ -22,6 +24,7 @@ function ProjectsPage() {
 
             <div style={{
                 margin: "10px",
+                marginBottom: "50px",
                 textAlign: "left"
             }}>
 
@@ -41,7 +44,7 @@ function ProjectsPage() {
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap"
-                    }}>PH Online Weather Search</div>
+                    }}><b>• PH Online Weather Search</b></div>
                     <div > <a
                         href="https://646a35de50c3070008efde0a--funny-madeleine-802369.netlify.app/"
                         target="_blank"
@@ -59,6 +62,35 @@ function ProjectsPage() {
                         </span>
                     </a>
                     </div>
+                </div>
+                <p>A web application that allows you to explore real-time weather information about different cities and towns. This is very useful for those who are planning to travel or just want to stay updated on the weather conditions of specific locations.
+                </p>
+                <div style={{ marginTop: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <img src={Weather} alt="" style={{ maxWidth: "50vw", height: "auto" }} />
+                </div>
+            </div>
+
+
+            <div style={{
+                margin: "10px",
+                textAlign: "left"
+            }}>
+
+                <div style={{
+                    display: "inline-block",
+                    alignItems: "center"
+                }}>
+                    <div style={{
+                        marginRight: "10px",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap"
+                    }}><b>• PH Online News Today</b> (not deployed at the moment)</div>
+                </div>
+                <p>A web application that allows you to browse the top 20 latest news from the Philippines covering various topics. The site is updated regularly and automatically.
+                </p>
+                <div style={{ marginTop: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <img src={News} alt="" style={{ maxWidth: "50vw", height: "auto" }} />
                 </div>
             </div>
 
