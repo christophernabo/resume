@@ -46,7 +46,7 @@ function ProjectsPage() {
                         whiteSpace: "nowrap"
                     }}><b>• PH Online Weather Search</b></div>
                     <div > <a
-                        href="https://646a35de50c3070008efde0a--funny-madeleine-802369.netlify.app/"
+                        href="https://646b1cb44661a800086e5075--funny-madeleine-802369.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none" }}
