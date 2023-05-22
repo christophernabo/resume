@@ -73,6 +73,7 @@ function ProjectsPage() {
 
             <div style={{
                 margin: "10px",
+                marginBottom: "30px",
                 textAlign: "left"
             }}>
 
